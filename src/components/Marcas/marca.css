@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+.marcas-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-marcas {
+    line-height: 31.2px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Sixtyfour';
+    margin-left: 100px;
+}
+/* Sección de detalles de la marca seleccionada */
+.detalle-marca {
+    display: flex;
+    align-items: center;
+    background: #f3d39767;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin:50px 200px ;
+}
+
+.detalle-imagen {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    object-fit: contain;
+    margin:0 70px;
+}
+
+.detalle-info {
+    text-align: left;
+    font-family: 'Inter';
+    margin-right: 80px;
+}
+
+.detalle-info h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    color: #EB901F;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.267);
+}
+
+.detalle-info p {
+    font-size: 16px;
+    color: #444;
+    text-shadow: 3px 3px 6px #00000054;
+}
+
+.detalle-info h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #EB901F;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.267);
+}
+
+.detalle-info ul {
+    list-style: circle;
+    padding:0 20px;
+}
+
+.detalle-info ul li {
+    font-size: 14px;
+}
+
+.detalle-info a {
+    color: rgba(0, 0, 255, 0.288);
+    text-decoration: none;
+}
+
+.detalle-info a:hover {
+    color: #EB901F;
+}
+
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.marca-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.marca-imagen {
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 33px;
+}
+
+.marca-boton {
+    background-color: #EB901F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.marca-boton:hover {
+    background-color: darkorange;
+}
+/* Estilos para el carrusel */
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.carrusel button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #EB901F;
+}
+.carrusel button:hover {
+    color: rgba(255, 140, 0, 0.274);
+}
+
+.carrusel-marcas {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carrusel-imagen {
+    width: 200px;
+    height: 200px;
+    margin: 0 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
