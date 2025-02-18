@@ -40,26 +40,62 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
     list-style: none;
     gap: 40px;
+    position: relative;
 }
 
-.nav-links li {
+.nav-menu li {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     line-height: 20.8px;
     letter-spacing: 0.5px;
 }
 
-.nav-links a {
+.nav-menu a {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
+.dropdown-container {
+    position: relative;
+}
 
-.nav-links a:hover {
+.dropdown-toggle {
+    cursor: pointer;
+    font-weight: 500;
+    color: black;
+}
+
+.dropdown-menu {
+    list-style: none;
+    left: 0;
+    width: 160px;
+    background-color: white;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #eb8f1f38;
+    border-radius: 4px;
+}
+.nav-menu a:hover {
     color: #EB901F;
     font-weight: 600;
 }
