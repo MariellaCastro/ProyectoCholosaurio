@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const paginas = [
-    { text: "Inicio", link: "/" }, { text: "Categorias", link: "/categorias" }, { text: "Marcas", link: "/marcas" }, { text: "Quienes Somos", link: "/quienessomos" }
+    { text: "Inicio", link: "/" }, { text: "Categorias", link: "/categorias" }, { text: "Marcas", link: "/marcas" }, { text: "Quienes Somos", link: "/quienes-somos" }
 ]
 const contactos = [
     { img: "ubicacion", text: "Centro Comercial Arenales, Av. Gral. Juan Antonio Álvarez de Arenales 1737, Lince 15073" },
