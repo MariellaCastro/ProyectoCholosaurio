@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+.container {
+    max-width: 1500px;
+    margin: 0 65px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: Sixtyfour;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 3px solid darkorange;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    color: darkgrey;
+    margin-bottom: 10px;
+  }
+  
+  .product-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Poppins;
+  }
+  
+  .product-button:hover {
+    background-color: darkorange;
+  }  

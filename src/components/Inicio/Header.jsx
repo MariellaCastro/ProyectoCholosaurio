@@ -9,9 +9,9 @@ const paginas = [
 ];
 
 const categorias = [
-    { nombre: "Figuras de Colección", url: "/figuras" },
-    { nombre: "Juguetes y Juegos", url: "/juguetes" },
-    { nombre: "Ropa y Accesorios", url: "/ropa" },
+    { nombre: "Figuras de Colección", url: "/figuras-coleccionables" },
+    { nombre: "Juguetes y Juegos", url: "/juguetes-juegos" },
+    { nombre: "Ropa y Accesorios", url: "/ropa-accesorios" },
     { nombre: "Decoración", url: "/decoracion" },
 ];
 
