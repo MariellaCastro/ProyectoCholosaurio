@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const paginas = [
     { nombre: "Inicio", url: "/" },
@@ -15,15 +15,23 @@ const categorias = [
     { nombre: "Decoración", url: "/decoracion" },
 ];
 
-export const Header = () => {
+export const Header = ({ cart = [] }) => {
+    const navigate = useNavigate();
     const [query, setQuery] = useState("");
     const [isOpen, setIsOpen] = useState(false);
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        if (query.trim() !== "") {
+            navigate(`/search?q=${encodeURIComponent(query)}`);
+        }
+    };
 
     return (
         <header>
             <img src="img/inicio/logo.png" alt="Cholosaurio-logo" className='logo-img' />
 
-            <div className="search-bar">
+            <form className="search-bar" onSubmit={handleSearch}>
                 <img src="img/inicio/busqueda.png" alt="Buscar" className="search-icon" />
                 <input
                     type="text"
@@ -32,7 +40,7 @@ export const Header = () => {
                     onChange={(e) => setQuery(e.target.value)}
                     className="search-input"
                 />
-            </div>
+            </form>
 
             <ul className="nav-menu">
                 {paginas.map((pagina, index) => (
@@ -69,8 +77,11 @@ export const Header = () => {
                 ))}
             </ul>
 
-            <div className="cart-icon">
-                <img src="img/inicio/carritodecompras.png" className="cart-icon-img" alt="Carrito de Compras" />
+            <div className="cart-container">
+                <div className="cart-icon" onClick={() => navigate("/cart")}>
+                    <img src="img/inicio/carritodecompras.png" className="cart-icon-img" alt="Carrito de Compras" />
+                    <span className="cart-count">{cart.length}</span>
+                </div>
             </div>
         </header>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Juguetes = ({ product }) => {
+const Juguetes = ({ product, addToCart}) => {
   if (!product) {
     return <p></p>;
   }
@@ -10,7 +10,7 @@ const Juguetes = ({ product }) => {
       <img src={product.image} alt={product.name} className="product-image" />
       <h3 className="product-name">{product.name}</h3>
       <p className="product-price">{product.price}</p>
-      <button className="product-button">Añadir al carrito</button>
+      <button className="product-button" onClick={() => addToCart(product)}>Añadir al carrito</button>
     </div>
   );
 };

@@ -58,7 +58,7 @@ const products = [
   },
 ];
 
-const Ciones = () => {
+const Ciones = ({addToCart}) => {
     if (!products || products.length === 0) {
       return <p>No hay productos disponibles</p>;
     }
@@ -68,7 +68,7 @@ const Ciones = () => {
         <h2 className="title">DECORACIONES</h2>
         <div className="product-grid">
           {products.map((product) => (
-            <Decora key={product.id} product={product} />
+            <Decora key={product.id} product={product} addToCart={addToCart}/>
           ))}
         </div>
       </div>
@@ -76,3 +76,4 @@ const Ciones = () => {
   };
 
   export default Ciones;
+  export { products };  

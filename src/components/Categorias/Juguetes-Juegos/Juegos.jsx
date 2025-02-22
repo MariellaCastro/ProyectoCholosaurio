@@ -148,7 +148,7 @@ const products = [
   },
 ];
 
-const Juegos = () => {
+const Juegos = ({addToCart}) => {
     if (!products || products.length === 0) {
       return <p>No hay productos disponibles</p>;
     }
@@ -158,7 +158,7 @@ const Juegos = () => {
         <h2 className="title">JUGUETES Y JUEGOS</h2>
         <div className="product-grid">
           {products.map((product) => (
-            <Juguetes key={product.id} product={product} />
+            <Juguetes key={product.id} product={product} addToCart={addToCart}/>
           ))}
         </div>
       </div>
@@ -166,3 +166,4 @@ const Juegos = () => {
   };
 
   export default Juegos;
+  export { products };  

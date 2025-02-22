@@ -148,7 +148,7 @@ const products = [
       },
 ];
 
-const Coleccion = () => {
+const Coleccion = ({addToCart}) => {
     if (!products || products.length === 0) {
       return <p>No hay productos disponibles</p>;
     }
@@ -158,7 +158,7 @@ const Coleccion = () => {
         <h2 className="title">FIGURAS DE COLECCION</h2>
         <div className="product-grid">
           {products.map((product) => (
-            <Figuras key={product.id} product={product} />
+            <Figuras key={product.id} product={product} addToCart={addToCart}/>
           ))}
         </div>
       </div>
@@ -166,3 +166,4 @@ const Coleccion = () => {
   };
 
   export default Coleccion;
+  export { products };  
