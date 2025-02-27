@@ -10,3 +10,14 @@ Para actualizar o verificar los cambios
 
 ```git pull```
 
+Para ver el estado del proyecto
+
+```git status```
+
+Para agregar nuevos archivos
+
+```git add .```
+
+Par enviar los cambios a github
+
+```git push```
